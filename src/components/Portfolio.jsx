@@ -51,7 +51,7 @@ const Portfolio = () => {
                             <h1 className='text-[23px]'>{work.title}</h1>
                             <h2 className='text-[13px] font-bold'>{work.subtitle}</h2>
                             <p className='text-[14px]'>{work.description}</p>
-                            <a href={work.link} className='w-[140px] bg-white text-ogpBlue px-3 rounded-md text-[12px] font-bold py-1 hover:scale-110 hover:shadow-lg'>VIEW ON BEHANCE</a>
+                            <a href={work.link} className='w-[140px] bg-white text-ogpBlue px-3 rounded-md lg:text-[12px] text-[10px] font-bold py-1 hover:scale-110 hover:shadow-lg'>VIEW ON BEHANCE</a>
                         </motion.div>
                     ))}
                 </div>
