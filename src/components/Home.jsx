@@ -26,7 +26,7 @@ export const Socials = ({ xValue, yValue }) => {
     ]
     return (
         <div
-            className='flex lg:flex-col lg:block hidden lg:mt-0 mt-4 flex-row justify-between items-center'
+            className='flex lg:flex-col lg:flex hidden lg:mt-0 mt-4 flex-row justify-between items-center'
         >
             {handles.map((link, index) => (
                 <motion.a
