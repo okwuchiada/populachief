@@ -26,7 +26,7 @@ export const Socials = ({ xValue, yValue }) => {
     ]
     return (
         <div
-            className='flex flex-col'
+            className='flex lg:flex-col lg:block hidden lg:mt-0 mt-4 flex-row justify-between items-center'
         >
             {handles.map((link, index) => (
                 <motion.a
@@ -34,7 +34,8 @@ export const Socials = ({ xValue, yValue }) => {
                     key={index}
                     animate={{ x: xValue, y: yValue }}
                     transition={{ delay: 1, duration: 2 }}
-                    className='mb-6 text-[23px]'
+                    className='mb-6 text-[23px] ml-3 lg:ml-0'
+                    target={'_blank'} rel="noreferrer"
                 >
                     {link.icon}
                 </motion.a>
@@ -47,19 +48,19 @@ const Home = () => {
 
 
     return (
-        <div className='h-full'>
+        <div className='h-screen'>
             <Nav />
-            <section className='bg-ogpBlue h-[70%] flex items-center justify-evenly'>
+            <section className='bg-ogpBlue h-[70%] flex lg:flex-row flex-col-reverse items-center justify-evenly'>
                 <Socials xValue={100} yValue={0} />
-                <div className='flex items-center w-1/2'>
+                <div className='flex items-center lg:w-1/2 w-full px-6'>
                     <div>
-                        <img src="/images/hero-image.svg" alt="" className='object-cover w-96' />
+                        <img src="/images/hero-image.svg" alt="" className='object-cover w-96 lg:block hidden' />
                     </div>
-                    <div>
+                    <div className='flex flex-col items-center'>
                         <motion.h2 initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            className='font-bold text-[37px]'>Hello, I'm Ijoma Peculiar.</motion.h2>
-                        <p className='text-[20px] ml-3 font-poppins'>I'm a Product designer. I create awesome
+                            className='font-bold text-[28px] lg:text-[37px]'>Hello, I'm Ijoma Peculiar.</motion.h2>
+                        <p className='text-[20px] lg:ml-3 font-poppins'>I'm a Product designer. I create awesome
                             UI/UX designs using amazing platforms like,
                             Figma and Adobe.</p>
 

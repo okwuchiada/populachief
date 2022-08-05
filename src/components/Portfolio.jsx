@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav } from '.'
 import { Socials } from './Home'
+import { motion } from 'framer-motion'
 
 const Portfolio = () => {
 
@@ -35,18 +36,23 @@ const Portfolio = () => {
     return (
         <>
             <Nav />
-            <section className='flex justify-evenly items-center px-10'>
+            <section className='flex flex-col-reverse lg:flex-row lg:justify-evenly justify-between items-center lg:px-10 '>
                 <Socials xValue={0} yValue={-100} />
-                <div className='flex justify-between flex-wrap items-center gap-4 w-4/5'>
+                <div className='flex justify-between flex-wrap items-center gap-4 lg:gap-10 w-4/5'>
                     {/* <p className='text-[12px] font-bold'>FREELANCING</p> */}
                     {works.map((work, index) => (
                         // <a href={work.link} key={index} className='w-96 border border-[#FFFFFF24] rounded-md py-[24px] px-[21px] w-[400px] h-[220px] flex flex-col justify-between font-poppins hover:shadow-lg hover:scale-110'></a>
-                        <div key={index} className='w-96 border border-[#FFFFFF24] rounded-md py-[24px] px-[21px] w-[400px] h-[220px] flex flex-col justify-between font-poppins'>
+                        <motion.div key={index}
+                            className='w-96 border border-[#FFFFFF24] rounded-md py-[24px] px-[21px] w-[400px] h-[220px] flex flex-col justify-between font-poppins'
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1 }}
+                        >
                             <h1 className='text-[23px]'>{work.title}</h1>
                             <h2 className='text-[13px] font-bold'>{work.subtitle}</h2>
                             <p className='text-[14px]'>{work.description}</p>
                             <a href={work.link} className='w-[140px] bg-white text-ogpBlue px-3 rounded-md text-[12px] font-bold py-1 hover:scale-110 hover:shadow-lg'>VIEW ON BEHANCE</a>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
