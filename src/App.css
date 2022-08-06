@@ -25,7 +25,7 @@ background: white;
 display: none;
 position: absolute;
 right: 0;
-bottom: 0px;
+bottom: -2px;
 }
 .nav-links .inactive:hover::before {
   display: block;
@@ -43,7 +43,7 @@ height: 1px;
 background: white;
 position: absolute;
 right: 0;
-bottom: 0px;
+bottom: -2px;
 
 }
 
