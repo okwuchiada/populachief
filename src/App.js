@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='relative bg-ogpBlue text-white py-4 h-auto lg:h-screen lg:px-10 px-4 lg:overflow-hidden'>
+    <div className='relative bg-ogpBlue text-white py-4 h-auto lg:px-10 px-4 lg:overflow-hidden'>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />

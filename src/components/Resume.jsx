@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Nav />
-            <section className='font-poppins lg:pl-[100px] px-4'>
+            <section className='font-poppins lg:pl-[100px] px-4 py-4'>
                 <div className='flex justify-between items-center'>
                     <div className='lg:w-2/3 w-full flex flex-col justify-between lg:h-[150px]'>
                         <h1 className='lg:text-[37px] text-[26px]'>Ijoma Peculiar</h1>
@@ -64,7 +64,9 @@ const Contact = () => {
                         <li> Artisan web</li>
                         <li>Artisan Mobile application</li>
                         <li>Alert Emergency response app  </li>
-                        <li>Money finance app   etc...</li>
+                        <li>VR Design show room.</li>
+                        <li>Powertrack</li>
+                        <li>Money finance app.</li>
                     </ul>
 
                     <p className='text-[14px] mt-4'>Links to my work can be found<Link to='/work' className='px-2 hover:scale-110 font-semibold'>here.</Link> More details can be provided upon request.</p>

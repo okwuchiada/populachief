@@ -13,16 +13,16 @@ const Portfolio = () => {
             link: 'https://www.behance.net/gallery/148334541/ARTISAN',
         },
         {
-            title: 'ALERT',
-            subtitle: 'UI + MOBILE APP + PROTOTYPE',
-            description: 'A platform created for emergency instances helping individuals report emergencies to first responders in few clicks.',
-            link: 'https://www.behance.net/gallery/147726561/Alert',
+            title: 'VR Design show room.',
+            subtitle: 'WEB DESIGN.',
+            description: 'A 3d design show room showcasing NIKE and Adidas products and also bitcoin purchase options.',
+            link: 'https://www.behance.net/gallery/150916823/AR-DESIGNER-SHOWROOM',
         },
         {
-            title: 'CAVE',
+            title: 'Powertrack',
             subtitle: 'UI + MOBILE APP + PROTOTYPE',
-            description: 'Skincare brand created to help people to find the best skincare products.',
-            link: 'https://www.behance.net/gallery/149726677/CAVE-skincare',
+            description: 'A platforn that helps prepaid users Track,recharge their electricity meters on their mobile devices.',
+            // link: 'https://www.behance.net/gallery/148334541/ARTISAN',
         },
         {
             title: 'PAYEASY',
@@ -34,7 +34,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <>
+        <div className='lg:h-screen'>
             <Nav />
             <section className='flex flex-col-reverse lg:flex-row lg:justify-evenly justify-between items-center lg:px-10 '>
                 <Socials xValue={0} yValue={-100} />
@@ -51,13 +51,13 @@ const Portfolio = () => {
                             <h1 className='text-[23px]'>{work.title}</h1>
                             <h2 className='text-[13px] font-bold'>{work.subtitle}</h2>
                             <p className='text-[14px]'>{work.description}</p>
-                            <a href={work.link} className='w-[140px] bg-white text-ogpBlue px-3 rounded-md lg:text-[12px] text-[10px] font-bold py-1 hover:scale-110 hover:shadow-lg'>VIEW ON BEHANCE</a>
+                            <a href={work?.link} className='w-[140px] bg-white text-ogpBlue px-3 rounded-md lg:text-[12px] text-[10px] font-bold py-1 hover:scale-110 hover:shadow-lg'>VIEW ON BEHANCE</a>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
-        </>
+        </div>
     )
 }
 
