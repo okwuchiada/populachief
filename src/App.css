@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Kodchasan:wght@400;500;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -9,10 +11,21 @@ body{
   height: 100%;
   overflow-x: hidden;
   font-size: 16px;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 /* `cursor-pointer font-montserrat text-[14px] mb-2 hover:scale-125 transition-all duration-200 ease-in-out ` */
 
+.blue-grad{
+  background: linear-gradient(180deg, #778DA9 0%, rgba(65, 90, 119, 0.62) 53.65%, rgba(27, 38, 59, 0.66) 100%);
+
+}
+.babylonica{
+  font-family: 'Babylonica', sans-serif;
+}
+.babybg{
+  background-image: url("/public/images/baby-step-1.png");
+}
 
 .nav-links .inactive{
   position: relative;
